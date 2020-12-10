@@ -7,7 +7,7 @@ import Register from "./page/Register";
 import Login from "./page/Login";
 import PrivateRoute from "./common/PrivateRoute"
 import Dashboard from "./page/Dashboard"
-import Map from "./page/Map"
+import MapPage from "./page/MapPage"
 import Contact from "./page/Contact"
 import AppContext from "./contexts/AppContext";
 import LocalStorageServices from "../services/LocalStorageServices";
@@ -28,7 +28,7 @@ const App = (props) => {
                     <Switch>
                         <PrivateRoute exact path="/dashboard" component={Dashboard}/>
                         <PrivateRoute exact path="/" component={Dashboard}/>
-                        <PrivateRoute exact path="/map" component={Map}/>
+                        <PrivateRoute exact path="/map" component={MapPage}/>
                         <PrivateRoute exact path="/contact" component={Contact}/>
 
                         <Route exact path="/register" component={Register}/>
