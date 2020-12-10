@@ -8,7 +8,7 @@ const mapStyles = {
   lng: 36.8233
 };
 
-export class MapPage extends Component {
+export class Map extends Component {
     state = 
     {
       userLocation: { lat: 32, lng: 32 }, 
@@ -172,4 +172,4 @@ export class MapPage extends Component {
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyCba5Z2xaqw3zNZcgis6h01iFbwzjy7-hk'
-})(MapPage);
+})(Map);
